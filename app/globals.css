@@ -1,0 +1,25 @@
+@font-face {
+  font-family: Noah;
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("./fonts/Noah-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Noah;
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("./fonts/Noah-Bold.woff2") format("woff2");
+}
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noah", "Times New Roman", sans-serif;
+
+  --color-primary: #1e1c1c;
+  --color-secondary: #fffafa;
+  --color-accent: #bb241f;
+}

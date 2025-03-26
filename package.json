@@ -1,0 +1,42 @@
+{
+  "name": "noah-darcy-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "slicemachine": "start-slicemachine"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@prismicio/client": "^7.16.1",
+    "@prismicio/next": "^2.0.0",
+    "@prismicio/react": "^3.1.0",
+    "gsap": "^3.12.7",
+    "next": "15.2.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@slicemachine/adapter-next": "^0.3.68",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.2.0",
+    "prettier": "^3.5.2",
+    "prettier-plugin-tailwindcss": "^0.6.11",
+    "slice-machine-ui": "^2.13.1",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}
