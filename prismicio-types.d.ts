@@ -20,10 +20,10 @@ interface HomeDocumentData {
    * - **Documentation**: https://prismic.io/docs/field#slices
    */
   slices: prismic.SliceZone<HomeDocumentDataSlicesSlice> /**
-   * Meta Title field in *Home*
+   * Noah D'Arcy's Portfolio field in *Home*
    *
    * - **Field Type**: Text
-   * - **Placeholder**: A title of the page used for social media and search engines
+   * - **Placeholder**: Noah D'Arcy's work is displayed
    * - **API ID Path**: home.meta_title
    * - **Tab**: SEO & Metadata
    * - **Documentation**: https://prismic.io/docs/field#key-text
@@ -67,6 +67,33 @@ export type HomeDocument<Lang extends string = string> =
 
 export type AllDocumentTypes = HomeDocument;
 
+/**
+ * Default variation for Hero Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Record<string, never>,
+  never
+>;
+
+/**
+ * Slice variation for *Hero*
+ */
+type HeroSliceVariation = HeroSliceDefault;
+
+/**
+ * Hero Shared Slice
+ *
+ * - **API ID**: `hero`
+ * - **Description**: Hero
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -92,6 +119,9 @@ declare module "@prismicio/client" {
       HomeDocumentData,
       HomeDocumentDataSlicesSlice,
       AllDocumentTypes,
+      HeroSlice,
+      HeroSliceVariation,
+      HeroSliceDefault,
     };
   }
 }

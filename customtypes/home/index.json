@@ -1,21 +1,24 @@
 {
   "format": "page",
   "id": "home",
+  "label": "Home",
+  "repeatable": false,
+  "status": true,
   "json": {
     "Main": {
       "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
         "config": {
           "choices": {}
-        },
-        "fieldset": "Slice Zone",
-        "type": "Slices"
+        }
       }
     },
     "SEO & Metadata": {
       "meta_title": {
         "config": {
-          "label": "Meta Title",
-          "placeholder": "A title of the page used for social media and search engines"
+          "label": "Noah D'Arcy's Portfolio",
+          "placeholder": "Noah D'Arcy's work is displayed "
         },
         "type": "Text"
       },
@@ -38,8 +41,5 @@
         "type": "Image"
       }
     }
-  },
-  "label": "Home",
-  "repeatable": false,
-  "status": true
+  }
 }
