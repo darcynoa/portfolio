@@ -61,7 +61,7 @@ export default function Hero() {
 
   return (
     <section ref={hero}>
-      <div className="relative ml-[0%] flex flex-col items-center justify-center pt-[20rem] md:pt-[5rem] 2xl:ml-[25%]">
+      <div className="relative ml-[0%] flex flex-col items-center justify-center pt-[5rem] md:pt-[5rem] 2xl:ml-[25%]">
         <div
           ref={circle}
           className="bg-accent absolute right-[5%] bottom-[1%] -z-10 aspect-square w-[84%] rounded-full md:right-[15%] md:w-[70%] lg:right-[27%] lg:w-[44%]"
@@ -75,16 +75,16 @@ export default function Hero() {
           className="z-10 w-[90%] md:w-[70%] lg:w-[47%]"
         />
       </div>
-      <div className="relative z-10 -mt-[4rem] mb-[4.5rem] flex flex-col gap-[8rem] pl-[2rem] md:-mt-[14rem] lg:pl-[15rem] 2xl:-mt-[20rem]">
+      <div className="relative z-10 -mt-[4rem] mb-[4.5rem] flex flex-col gap-[4rem] pl-[2rem] md:-mt-[14rem] md:gap-[8rem] lg:pl-[15rem] 2xl:-mt-[20rem]">
         <h1
           ref={header}
-          className="font-sans text-[5rem] leading-tight font-bold tracking-[1.5px] uppercase md:text-[7rem]"
+          className="font-sans text-[3rem] leading-tight font-bold tracking-[1.5px] uppercase md:text-[7rem]"
         >
           Dope web experiences
         </h1>
         <p
           ref={blurb}
-          className="w-[80%] translate-y-28 font-sans text-[1.2rem] leading-tight tracking-[1.5px] md:w-[60%] lg:w-[40%]"
+          className="w-[80%] translate-y-28 font-sans text-[1rem] leading-tight tracking-[1.5px] md:w-[60%] md:text-[1.2rem] lg:w-[40%]"
         >
           It&apos;s my passion to create smooth and visually appealing web
           experiences, check some of them out below!

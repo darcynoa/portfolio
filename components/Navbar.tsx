@@ -38,7 +38,7 @@ export default function Navbar() {
   return (
     <nav
       ref={nav}
-      className="fixed flex w-screen justify-between px-[2rem] pt-[5rem] lg:px-[8rem] lg:pt-[6rem]"
+      className="fixed flex w-screen justify-between px-[2rem] pt-[3rem] lg:px-[8rem] lg:pt-[6rem]"
     >
       <Image
         className="nav-element"
@@ -49,7 +49,7 @@ export default function Navbar() {
       />
       <ul
         ref={navElement}
-        className="flex flex-col gap-[0.5rem] pr-[2rem] font-sans text-[1.2rem] tracking-[0.15rem] lowercase md:flex-row md:gap-[3rem] lg:tracking-[0.2rem]"
+        className="flex flex-row gap-[1.5rem] pr-[2rem] font-sans text-[1.2rem] tracking-[0.15rem] lowercase md:gap-[3rem] lg:tracking-[0.2rem]"
       >
         {navLinks.map((link) => (
           <li
