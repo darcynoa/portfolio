@@ -23,6 +23,7 @@ const routes: prismic.ClientConfig["routes"] = [
     type: "showcase",
     path: "/:uid",
   },
+  // FINNY: 1111111111111111111111111111111111111111111111111111111111111111112
 ];
 
 /**
