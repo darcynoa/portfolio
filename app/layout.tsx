@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import { Suspense } from "react";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,11 +14,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`bg-primary text-secondary font-sans antialiased`}>
-        <Navbar />
-        {children}
-      </body>
-    </html>
+    <Suspense
+      fallback={
+        <div className="bg-primary absolute z-50 h-screen w-screen"></div>
+      }
+    >
+      <html lang="en">
+        <body className={`bg-primary text-secondary font-sans antialiased`}>
+          <Navbar />
+          {children}
+        </body>
+      </html>
+    </Suspense>
   );
 }

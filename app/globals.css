@@ -23,3 +23,11 @@
   --color-secondary: #fffafa;
   --color-accent: #bb241f;
 }
+
+::-webkit-scrollbar {
+  display: "none";
+}
+
+.clippy {
+  clip-path: circle(62.1% at 50% 100%);
+}

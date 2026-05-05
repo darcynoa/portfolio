@@ -38,7 +38,7 @@ export default function Navbar() {
   return (
     <nav
       ref={nav}
-      className="fixed flex w-screen justify-between px-[2rem] pt-[3rem] lg:px-[8rem] lg:pt-[6rem]"
+      className="fixed flex w-screen justify-between px-[2rem] pt-[3rem] lg:px-[8rem]"
     >
       <Image
         className="nav-element"

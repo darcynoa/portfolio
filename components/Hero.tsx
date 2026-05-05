@@ -61,7 +61,7 @@ export default function Hero() {
 
   return (
     <section ref={hero}>
-      <div className="relative ml-[0%] flex flex-col items-center justify-center pt-[5rem] md:pt-[5rem] 2xl:ml-[25%]">
+      <div className="relative ml-[0%] flex flex-col items-center justify-center pt-[5rem] md:pt-[0rem] 2xl:ml-[25%]">
         <div
           ref={circle}
           className="bg-accent absolute right-[5%] bottom-[1%] -z-10 aspect-square w-[84%] rounded-full md:right-[15%] md:w-[70%] lg:right-[27%] lg:w-[44%]"
@@ -75,7 +75,7 @@ export default function Hero() {
           className="z-10 w-[90%] md:w-[70%] lg:w-[47%]"
         />
       </div>
-      <div className="relative z-10 -mt-[4rem] mb-[4.5rem] flex flex-col gap-[4rem] pl-[2rem] md:-mt-[14rem] md:gap-[8rem] lg:pl-[15rem] 2xl:-mt-[20rem]">
+      <div className="relative z-10 -mt-[4rem] flex flex-col gap-[4rem] pl-[2rem] md:-mt-[14rem] md:gap-[8rem] lg:pl-[15rem] 2xl:-mt-[20rem]">
         <h1
           ref={header}
           className="font-sans text-[3rem] leading-tight font-bold tracking-[1.5px] uppercase md:text-[7rem]"

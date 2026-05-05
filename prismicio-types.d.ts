@@ -159,6 +159,68 @@ type HeroSliceVariation = HeroSliceDefault;
  */
 export type HeroSlice = prismic.SharedSlice<"hero", HeroSliceVariation>;
 
+/**
+ * Primary content in *Work → Default → Primary*
+ */
+export interface WorkSliceDefaultPrimary {
+  /**
+   * Work Image field in *Work → Default → Primary*
+   *
+   * - **Field Type**: Image
+   * - **Placeholder**: *None*
+   * - **API ID Path**: work.default.primary.work_image
+   * - **Documentation**: https://prismic.io/docs/field#image
+   */
+  work_image: prismic.ImageField<never>;
+
+  /**
+   * Work Title field in *Work → Default → Primary*
+   *
+   * - **Field Type**: Title
+   * - **Placeholder**: L.A. Noire Speedrunning
+   * - **API ID Path**: work.default.primary.work_title
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  work_title: prismic.TitleField;
+
+  /**
+   * Work Blurb field in *Work → Default → Primary*
+   *
+   * - **Field Type**: Rich Text
+   * - **Placeholder**: Something about the project that sums it up!
+   * - **API ID Path**: work.default.primary.work_blurb
+   * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+   */
+  work_blurb: prismic.RichTextField;
+}
+
+/**
+ * Default variation for Work Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WorkSliceDefault = prismic.SharedSliceVariation<
+  "default",
+  Simplify<WorkSliceDefaultPrimary>,
+  never
+>;
+
+/**
+ * Slice variation for *Work*
+ */
+type WorkSliceVariation = WorkSliceDefault;
+
+/**
+ * Work Shared Slice
+ *
+ * - **API ID**: `work`
+ * - **Description**: Work
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WorkSlice = prismic.SharedSlice<"work", WorkSliceVariation>;
+
 declare module "@prismicio/client" {
   interface CreateClient {
     (
@@ -190,6 +252,10 @@ declare module "@prismicio/client" {
       HeroSlice,
       HeroSliceVariation,
       HeroSliceDefault,
+      WorkSlice,
+      WorkSliceDefaultPrimary,
+      WorkSliceVariation,
+      WorkSliceDefault,
     };
   }
 }

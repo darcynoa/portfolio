@@ -1,0 +1,45 @@
+{
+  "id": "work",
+  "type": "SharedSlice",
+  "name": "Work",
+  "description": "Work",
+  "variations": [
+    {
+      "id": "default",
+      "name": "Default",
+      "docURL": "...",
+      "version": "initial",
+      "description": "Default",
+      "imageUrl": "",
+      "primary": {
+        "work_image": {
+          "type": "Image",
+          "config": {
+            "label": "Work Image",
+            "constraint": {},
+            "thumbnails": []
+          }
+        },
+        "work_title": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Work Title",
+            "placeholder": "L.A. Noire Speedrunning",
+            "allowTargetBlank": false,
+            "single": "heading1"
+          }
+        },
+        "work_blurb": {
+          "type": "StructuredText",
+          "config": {
+            "label": "Work Blurb",
+            "placeholder": "Something about the project that sums it up!",
+            "allowTargetBlank": false,
+            "single": "paragraph"
+          }
+        }
+      },
+      "items": {}
+    }
+  ]
+}
